@@ -35,4 +35,23 @@ export class UI {
     }
     categoryGames.innerHTML = gamesCard;
   }
+
+  // ? ========= Display Game Details =========
+  displayGameDetails(gameID) {
+    let gameCardPage = document.querySelector("#detailsContent");
+    let gameDetils = `<!-- Game Details -->
+        <div class="col-md-4">
+          <img src="${gameID.thumbnail}" class="w-100" alt="image details" />
+        </div>
+        <div class="col-md-8">
+          <h3>Title: ${gameID.title}</h3>
+          <p>Category: <span class="badge text-bg-info">${gameID.genre}</span> </p>
+          <p>Platform: <span class="badge text-bg-info">${gameID.platform}</span> </p>
+          <p>Status: <span class="badge text-bg-info">${gameID.status}</span> </p>
+          <p class="small">${gameID.description}</p>
+          <a class="btn btn-outline-warning" target="_blank" href="${gameID.game_url}">Show Game</a>
+        </div>`;
+
+    gameCardPage.innerHTML = gameDetils;
+  }
 }

@@ -1,3 +1,4 @@
+import { GameDetails } from "./gameDetails.module.js";
 import { UI } from "./userInterface.js";
 
 export class Games {
@@ -61,7 +62,28 @@ export class Games {
   // ? ========= Display Category Games =========
   async getGamesData(category) {
     this.ui = new UI();
+
+    // Fetch games data for the specified category
     const categoryData = await this.fetchGamesData(category);
-    this.ui.displayCategoryGames(categoryData)
+
+    // Display the fetched games data in the UI
+    this.ui.displayCategoryGames(categoryData);
+
+    // Once the data is added to the HTML, we can get the card ID (Identifying the exact card clicked to display its details.)
+    // Identify the exact card clicked to display its details
+    this.gameId();
+  }
+
+  // ? ========= Get Game ID =========
+  gameId() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const id = card.dataset.id;
+        console.log(id);
+        // Returning Game Details
+        const gameDetails = new GameDetails(id);
+      });
+    });
   }
 }
