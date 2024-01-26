@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ? ================================= Google Fonts (Comfortaa || Nerko One) ================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Nerko+One:wght@300;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- ? ================================= CSS Files ================================= -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+
+  <title>Gaming Website</title>
+</head>
+
+<body>
+
+  <!-- ? =================================== Home Page =================================== -->
+  <section id="games">
+
+    <!-- ? ============== Background Img ============== -->
+    <header>
+      <img src="./assets/images/wraper.png" class="w-100" alt="game photo" />
+    </header>
+
+    <!-- ? ============== NavBar ============== -->
+    <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
+      <div class="container">
+        <h5 class="navbar-brand mb-0">
+          <img src="./assets/images/logo-sm.png" alt="logo photo" style="max-width: 40px" /> Game Reviews
+        </h5>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+            <li class="nav-item">
+              <a role="button" class="nav-link active" aria-current="page" data-category="mmorpg">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="shooter">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="sailing">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="permadeath">permadeath</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="superhero">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-category="pixel">pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ? ============== Games Options ============== -->
+    <main class="container my-5 home">
+      <section class="position-relative">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gamesData">
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Game Card -->
+          <div class="col">
+            <div class="card h-100 bg-transparent" role="button">
+              <div class=" card-body">
+                <figure class="position-relative">
+                  <img class="card-img-top object-fit-cover h-100" src="assets/images/wraper.png" />
+                </figure>
+                <figcaption>
+                  <div class="hstack justify-content-between">
+                    <h3 class="h6 small">Game Title</h3>
+                    <span class="badge text-bg-primary p-2">Free</span>
+                  </div>
+                  <p class="card-text small text-center opacity-50">
+                    Game description
+                  </p>
+                </figcaption>
+              </div>
+
+              <footer class="card-footer small hstack justify-content-between">
+                <span class="badge badge-color">category</span>
+                <span class="badge badge-color">platform</span>
+              </footer>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+  </section>
+
+
+  <!-- ? =================================== Game Details =================================== -->
+  <section id="details">
+    <div class="container">
+      <header class="hstack justify-content-between">
+        <h1 class="text-center h3 py-4">Details Game</h1>
+        <button class="btn-close btn-close-white" id="btnClose"></button>
+      </header>
+      <div class="row g-4" id="detailsContent">
+
+        <!-- Game Details -->
+        <div class="col-md-4">
+          <img src="assets/images/wraper.png" class="w-100" alt="image details" />
+        </div>
+        <div class="col-md-8">
+          <h3>Game Title</h3>
+          <p>Category: <span class="badge text-bg-info">Category</span> </p>
+          <p>Platform: <span class="badge text-bg-info">platform</span> </p>
+          <p>Status: <span class="badge text-bg-info">status</span> </p>
+          <p class="small">description</p>
+          <a class="btn btn-outline-warning" target="_blank" href="#">Show Game</a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ? =================================== Loading Layer=================================== -->
+  <div class="loading d-none">
+    <span class="loader"></span>
+  </div>
+
+</body>
+
+</html>
