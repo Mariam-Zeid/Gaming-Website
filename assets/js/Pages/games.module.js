@@ -32,6 +32,10 @@ export class Games {
 
   // ? ========= Fetch Games API Data =========
   async fetchGamesData(category) {
+
+    const loading = document.querySelector(".loading");
+    loading.classList.remove("d-none");
+
     const options = {
       method: "GET",
       headers: {
@@ -46,6 +50,9 @@ export class Games {
       );
       const responseData = await response.json();
       console.log(responseData);
+
+      loading.classList.add("d-none");
+      
       return responseData;
     } catch (err) {
       console.log(err);

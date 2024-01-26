@@ -16,6 +16,9 @@ export class GameDetails {
 
   // ? ========= Fetch Game API Details =========
   async fetchGameDetails(gameID) {
+    const loading = document.querySelector(".loading");
+    loading.classList.remove("d-none");
+
     const options = {
       method: "GET",
       headers: {
@@ -30,6 +33,9 @@ export class GameDetails {
       );
       const responseData = await response.json();
       console.log(responseData);
+
+      loading.classList.add("d-none");
+
       return responseData;
     } catch (err) {
       console.log(err);
