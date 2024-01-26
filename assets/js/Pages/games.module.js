@@ -2,6 +2,8 @@ import { UI } from "./userInterface.js";
 
 export class Games {
   constructor() {
+    // Default category name for the first entry
+    this.getGamesData("mmorpg");
     // Select all navigation links
     const navLinks = document.querySelectorAll(".nav-link");
     // Attach click event listeners to each navigation link
@@ -9,11 +11,10 @@ export class Games {
       clickedLink.addEventListener("click", () => {
         // Activate the clicked link
         this.activeLink(clickedLink);
-        
         const category = this.getCategory(clickedLink);
-        this.getGamesData(category)
+        this.getGamesData(category);
       });
-    });    
+    });
   }
 
   // ? ========= Change active Link =========
